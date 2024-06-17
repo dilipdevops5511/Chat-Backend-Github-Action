@@ -38,7 +38,7 @@ resource "aws_instance" "web" {
   user_data              = templatefile("./script.sh", {})
 
   tags = {
-    Name = "swiggy-base-server"
+    Name = "Backend-server"
   }
   root_block_device {
     volume_size = 30
